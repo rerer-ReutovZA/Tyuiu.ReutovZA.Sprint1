@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,7 +13,8 @@ namespace Tyuiu.ReutovZA.Sprint1.Task2.V16.Lib
     {
         public double CalculatePerimetrCircle(int value)
         {
-            return 2 * Math.PI * value;
+            double perimeter = 2 * Math.PI * value;
+            return Math.Round(perimeter, 3);
         }
     }
 }
