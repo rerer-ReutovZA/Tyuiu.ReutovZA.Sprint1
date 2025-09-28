@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Tyuiu.ReutovZA.Sprint1.Task2.V16.Lib;
+
+//Написать программу, которая запрашивает у пользователя исходные данные, выполняет указанные расчёты и печатает результат на экране.
+
+//Формулировка задания: Известен радиус круга. Вычислить примерный периметр круга. Ответ округлите до 3 знаков после запятой.
+
+//Что пользователь вводит? Радиус круга (целое число)
+
+//Что программа печатает на экране? Периметр круга (вещественное число)
+
+namespace Tyuiu.ReutovZA.Sprint1.Task2.V16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DataService ds = new DataService();
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            int x;
+
+            Console.WriteLine("Введите радиус:");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+
+            Console.WriteLine("Периметр круга = " + ds.CalculatePerimetrCircle(x));
+
+            Console.ReadLine();
+        }
+    }
+}
