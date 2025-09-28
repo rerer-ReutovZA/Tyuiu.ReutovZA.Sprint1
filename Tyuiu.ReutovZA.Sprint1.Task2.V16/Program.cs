@@ -36,7 +36,7 @@ namespace Tyuiu.ReutovZA.Sprint1.Task2.V16
             Console.WriteLine("***************************************************************************");
 
             double result = ds.CalculatePerimetrCircle(x);
-            Console.WriteLine($"Периметр круга  = {result:F3}");
+            Console.WriteLine($"Периметр круга = {result:F3}");
 
 
             Console.ReadLine();
