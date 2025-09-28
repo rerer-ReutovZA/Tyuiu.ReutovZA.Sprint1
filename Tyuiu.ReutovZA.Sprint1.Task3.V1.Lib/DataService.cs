@@ -12,7 +12,8 @@ namespace Tyuiu.ReutovZA.Sprint1.Task3.V1.Lib
     {
         public double CylinderVolume(double r, double h)
         {
-            return Math.PI * Math.Pow(r, 2) * h;
+            double volume = Math.PI * Math.Pow(r, 2) * h;
+            return Math.Round(volume, 3);
         }
     }
 }
