@@ -28,14 +28,16 @@ namespace Tyuiu.ReutovZA.Sprint1.Task2.V16
 
             int x;
 
-            Console.WriteLine("Введите радиус:");
+            Console.WriteLine("Введите :");
             x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Периметр круга = " + ds.CalculatePerimetrCircle(x));
+            double result = ds.CalculatePerimetrCircle(x);
+            Console.WriteLine($"Периметр круга = {result:F3}");
+
 
             Console.ReadLine();
         }
